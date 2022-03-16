@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos!</title>
+    <link rel="stylesheet" href="css/style.css">
+      <!-- wow js -->
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <header class="encabezado">
+         <!-- abre nav -->
+         <nav>
+            <a href="index.html"><img src="img/phone.svg" alt="logo celular" class="logo"></a>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="productos.html"><li>PRODUCTOS</li></a>
+                    <a href="contacto.html"><li>CONTACTO</li></a>
+                    <a href="faqs.html"><li>FAQs</li></a>
+                    <a href="galeria.html"><li>GALERÍA</li></a>
+                </ul>
+        </nav>
+        <!-- cierra nav -->
+    </header>
+
+    <main>
+        <h2>¿Necesitás contactarnos?</h2>
+            <section class="formulario">
+                <!-- abre form -->
+                <form action="" method="post" id="contacto">
+                    <fieldset>
+                        <legend>Ingresá tus datos personales</legend>
+                        <label for="nombre">Nombre y apellido</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre" class="formInput">
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" class="formInput">
+                        <br>
+                        <label for="direccion">Dirección</label>
+                        <br>
+                        <input type="text" name="direccion" id="direccion" class="formInput">
+                        <br><br>
+                        <div>¿Sos nuevo cliente?</div>
+                        <label for="cliente">Si</label>
+                        <input type="radio" name="cliente" id="nuevo">
+                        <label for="cliente">No</label>
+                        <input type="radio" name="cliente" id="viejo">
+                        <br><br>
+                        <div>¿Por qué tema nos contactás?</div>
+                        <select name="contacto" id="contacto" class="formInput">
+                            <option value="compra">Compras</option> 
+                            <option value="envio">Envíos</option> 
+                            <option value="queja">Quejas</option>  
+                            <option value="otro">Otro</option>
+                        </select>
+                        <br><br>
+                        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Describí tu consulta..." class="textArea textAreaResize" class="formInput"></textarea><br>
+                        <label for="texto"></label>
+                        <input type="submit" value="Enviar" class="formButton">
+                        <input type="reset" value="Cancelar" class="formButton">
+                    </fieldset>
+                </form>
+                 <!-- cierra form -->
+                 <!-- abre iframe -->
+            </section>
+            <section class="iframe">
+                <h3>Donde nos encontramos:</h3><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6067580567906!2d-58.51279031905079!3d-34.58881552280768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7b3bf036b21%3A0xb95eb5ba039dd28b!2sLadines%203521%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1644522075311!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="iframe"></iframe>   
+            </section>
+                <!-- cierra iframe -->
+
+        </main>
+                
+    <footer class="pie wow fadeIn" >
+        <!-- abre footer -->
+        <div>Seguinos en nuestras redes sociales</div>
+        <a href="https://facebook.com"><img src="img/facebook.png" alt="link de facebook"></a>
+        <a href="https://twitter.com"><img src="img/twitter.png" alt="link de twitter"></a>
+        <a href="https://instagram.com"><img src="img/instagram.png" alt="link de instagram"></a>
+    </footer>
+        <!-- cierra footer -->
+</body>
+</html>
